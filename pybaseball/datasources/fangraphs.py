@@ -135,7 +135,7 @@ class FangraphsDataTable(ABC):
             'pos': FangraphsPositions.parse(position).value,
             'stats': self.STATS_CATEGORY.value,
             'lg': FangraphsLeague.parse(league.upper()).value,
-            'qual': qual if qual is not None else 'y',
+            'qual': qual if qual is not None else '0',
             'type': stat_list_to_str(stat_columns_enums),
             'season': end_season,
             'month': FangraphsMonth.parse(month).value,
